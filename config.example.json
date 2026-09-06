@@ -1,0 +1,24 @@
+{
+  "tvcp": {
+    "minimum_rating": "S3",
+    "minimum_rating_change_days": 90,
+    "minimum_consolidated_hours": 50
+  },
+  "delivery": {
+    "email": {
+      "enabled": true,
+      "smtp": {
+        "host": "smtp.example.com",
+        "port": 587,
+        "secure": false,
+        "startTls": true,
+        "fromName": "APAC TVCP",
+        "fromAddress": "tvcp@example.org",
+        "toAddress": "board@example.org"
+      }
+    },
+    "discord": {
+      "enabled": true
+    }
+  }
+}

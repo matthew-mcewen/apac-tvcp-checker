@@ -1,0 +1,7 @@
+node_modules/
+frontend/dist/
+.wrangler/
+.dev.vars
+worker-configuration.d.ts
+*.log
+php-app/config.json

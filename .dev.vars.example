@@ -1,0 +1,4 @@
+VATSIM_API_KEY=your-vatsim-core-api-key
+SMTP_USERNAME=your-smtp-username
+SMTP_PASSWORD=your-smtp-password
+DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/xxxxx/yyyyy

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APAC Specialists of ATC - Signup</title>
+    <link rel="stylesheet" href="assets/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="form-card">
+        <h1 class="form-title">Register</h1>
+        <h2 class="form-subtitle">VATSIM APAC Specialists of ATC Project</h2>
+
+        <div class="field-row">
+          <label class="field" for="cid">
+            <span class="field-label">VATSIM ID</span>
+            <input id="cid" type="text" inputmode="numeric" placeholder="1234567" />
+          </label>
+          <div class="check-btn-wrap" id="checkBtnWrap">
+            <div class="tooltip" id="tooltip" hidden>You can only check every 3min.</div>
+            <button type="button" class="btn btn-primary" id="checkBtn">Check</button>
+          </div>
+        </div>
+        <p class="error-text" id="checkError" hidden></p>
+
+        <label class="field" for="rating">
+          <span class="field-label">Rating</span>
+          <input id="rating" type="text" disabled value="" />
+        </label>
+
+        <label class="field" for="region">
+          <span class="field-label">Region / Division / Subdivision</span>
+          <input id="region" type="text" disabled value="" />
+        </label>
+
+        <label class="field" for="lastRatingChange">
+          <span class="field-label">Last Rating Change</span>
+          <input id="lastRatingChange" type="text" disabled value="" />
+        </label>
+
+        <div id="resultToast" hidden></div>
+
+        <div id="consentSection" hidden>
+          <label class="consent-row">
+            <input type="checkbox" id="consentCheckbox" />
+            <span>
+              I consent to my name, CID, and the details shown above, being listed on a
+              public roster.
+            </span>
+          </label>
+
+          <button type="button" class="btn btn-primary btn-block" id="submitBtn" disabled>
+            Submit
+          </button>
+
+          <p class="success-text" id="submitSuccess" hidden>
+            Your application has been submitted.
+          </p>
+          <p class="error-text" id="submitError" hidden></p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">By Bailey Brown &amp; Matthew McEwen</footer>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>

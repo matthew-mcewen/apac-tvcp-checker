@@ -1,0 +1,17 @@
+{
+  "tvcp": {
+    "minimum_rating": "S3",
+    "minimum_rating_change_days": 90,
+    "minimum_consolidated_hours": 50
+  },
+  "delivery": {
+    "discord": {
+      "enabled": true,
+      "webhook_url": ""
+    },
+    "google_sheets": {
+      "enabled": false,
+      "webhook_url": ""
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<FilesMatch "\.json$">
+    Require all denied
+</FilesMatch>
+
+RewriteEngine On
+RewriteRule ^lib/ - [F,L]

@@ -1,0 +1,22 @@
+{
+  "name": "apac-tvcp-checker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "npm run build:frontend && wrangler deploy",
+    "build:frontend": "npm run build --prefix frontend",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "types": "wrangler types"
+  },
+  "dependencies": {
+    "hono": "^4.13.7",
+    "worker-mailer": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.129.0"
+  }
+}
